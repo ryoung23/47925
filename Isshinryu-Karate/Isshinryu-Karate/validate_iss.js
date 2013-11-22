@@ -33,7 +33,7 @@ function validatePNumber(){
 }
 function validateEMail(){
 	var x=document.forms["signUp"]["email"].value;
-	var re = new RegExp(/^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$/);
+	var re = new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/);
     var m = re.exec(x);
     if (m==null){
         alert("Please fill out E-Mail properly!");
@@ -44,7 +44,7 @@ function validateEMail(){
 }
 function validateAddress(){
 	var x=document.forms["signUp"]["address1"].value;
-	var re = new RegExp(//);
+	var re = new RegExp(/^\s*([0-9]{1,5}\s*[A-Z][a-z]{1,10}\s*[A-Z][a-z]{1,10}\s*[A-Z][a-z]{1,10}|[0-9]{1,5}\s*[A-Z][a-z]{1,10}\s*[A-Z][a-z]{1,10}|[0-9]{1,5}\s*[A-Z][a-z]{1,10}\s*[A-Z][a-z]{1,3}.|[0-9]{1,5}\s*[A-Z].\s*[A-Z][a-z]{1,10}\s*[A-Z][a-z]{1,3}.)\,\s*([A-Z][a-z]{1,10}|[A-Z][a-z]{1,10}\s*[A-Z][a-z]{1,10}|[A-Z].\s*[A-Z][a-z]{1,10})\,\s*[A-Z]{2}\s*[0-9]{5}\s*$/);
     var m = re.exec(x);
     if (m==null){
         alert("Please fill out E-Mail properly!");
@@ -56,4 +56,8 @@ function validateAddress(){
 function validateForm(){
     if(!validateFName())return false;
     if(!validateLName())return false;
+	if(!validatePNumber())return false;
+	if(!validateEMail())return false;
+	if(!validateAddress())return false;
     return true;
+	}

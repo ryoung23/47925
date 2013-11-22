@@ -2,8 +2,8 @@
 	<head>
 		<!--
 			Name: Richard Young
-			Date: Oct 22, 2013
-			First draft of the Isshinryu Karate website
+			Date: Nov 21, 2013
+			Third Draft
 		-->
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -14,27 +14,42 @@
 	</head>	
 
 	<body>
-		<!--Using a table to organize the sign up form. Will possibly put the form onto another page if this page
-        becomes too cluttered. You can add or subtract any of the form cells if you wish. -->
+	
+		<div style="text-align:center">
+			<img src="images\logo.jpg" width="559" height="273" alt="Isshinryu Karate"/>
+		</div>
+		<!--Nav bar-->
+		<div style="text-align:center">
+			<ul id="navMenu">
+				<li id="navi"><a class="navigate" href="homeIssKarate.html">Home</a></li>
+				<li id="navi"><a class="navigate" href="hours.html">Hours</a></li>
+				<li id="navi"><a class="navigate" href="contact.html">Contact</a></li>
+				<li id="navi"><a class="navigate" href="staff.html">Staff</a></li>
+				<li id="navi"><a class="navigate" href="terms.html">Terms</a></li>
+				<li id="navi"><a class="navigate" href="about.html">About</a></li>
+			</ul>
+		</div>
+		<!--End nav bar-->
+		<!--Using a table to organize the sign up form. You can add or subtract any of the form cells if you wish. -->
       		  <form name="signUp" action="placeholder.html" method="get" onsubmit="return validateForm()">
               	<table width="27%" style="border-style:none">
            			<tr> 
                     	<td width="24%">First Name*</td>
-                    	<td width="26%"><input type="text" name="fName"></td>
+                    	<td width="26%"><input type="text" name="fName" placeholder="First Name"></td>
                     	<td width="24%">Last Name*	</td>
-                   		<td width="26%"><input type="text" name="lName"></td>
+                   		<td width="26%"><input type="text" name="lName" placeholder="Last Name"></td>
                     </tr>  
                     <tr>
                     	<td>Parent's Name</td>
-                        <td><input type="text" name="pName"></td>
+                        <td><input type="text" name="pName" placeholder="Parent's Name (if applicable)"></td>
                     </tr>
                     <tr>   
           			 	<td>Phone Number*</td>
-                        <td><input type="text" name="phone"></td>
+                        <td><input type="text" name="phone" placeholder="(ex. xxx-xxx-xxxx)"></td>
                     </tr>
                     <tr>
           				<td>E-mail*</td>
-                        <td><input type="text" name="email"></td>
+                        <td><input type="text" name="email" placeholder="E-mail"></td>
                     </tr>
                     <tr>
                     	<td>Obi (belt) Rank</td>
@@ -70,11 +85,11 @@
 					</tr>
 					<tr>
 						<td>Address1</td>
-						<td><input type="text" name="address1"></td>
+						<td><input type="text" name="address1" placeholder="123 Street St., City, ST XXXXX"></td>
 					</tr>
 					<tr>
 						<td>Address2</td>
-						<td><input type="text" name="address2"></td>
+						<td><input type="text" name="address2" placeholder="apt, etc."></td>
 					</tr>
 					<tr>
 						<td><input type="submit"></td>

@@ -3,12 +3,10 @@ For all pages
 
 Things to do with isshinryu karate website:
 	storage (cookies? Session storage?)
-	finish terms
 	finish contact form
-	fix sign-up form
 	beautify site (it's ugly)/no colors in this world I want them to turn black
 		TABLES
-	marque - the dude loves them
+	Place holders for forms!
 	
 Things to do with personal site:
 	start it...
