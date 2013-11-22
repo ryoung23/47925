@@ -1,0 +1,31 @@
+For all pages
+	CHECKLIST for projects
+
+Things to do with isshinryu karate website:
+	storage (cookies? Session storage?)
+	finish terms
+	finish contact form
+	fix sign-up form
+	beautify site (it's ugly)/no colors in this world I want them to turn black
+		TABLES
+	marque - the dude loves them
+	
+Things to do with personal site:
+	start it...
+	First page:buttons 
+	buttons lead to second page (could make an onclick event, each button brings up different user options)
+	second page user input
+	use javascript to display input
+	
+Things to do with the Survey
+	Start with a form
+	questions! (multiple choice, single answer; multiple choice, multiple answer; true/false; user choice)
+	Name/Date/etc.
+	sumbit
+	store information!
+	Results page
+	
+For git page:
+	index page
+		links to different folders (karate, personal, etc)
+	
