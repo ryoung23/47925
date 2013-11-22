@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<!--
+			Name: Richard Young
+			Date: Oct 22, 2013
+			First draft of the Isshinryu Karate website
+		-->
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>Isshinryu-Karate WIP</title>
+			
+		<link rel="stylesheet" type="text/css" href="issKarate.css" />
+		<script src="validate_iss.js"></script>
+	</head>	
+
+	<body>
+		<!--Using a table to organize the sign up form. Will possibly put the form onto another page if this page
+        becomes too cluttered. You can add or subtract any of the form cells if you wish. -->
+      		  <form name="signUp" action="placeholder.html" method="get" onsubmit="return validateForm()">
+              	<table width="27%" style="border-style:none">
+           			<tr> 
+                    	<td width="24%">First Name*</td>
+                    	<td width="26%"><input type="text" name="fName"></td>
+                    	<td width="24%">Last Name*	</td>
+                   		<td width="26%"><input type="text" name="lName"></td>
+                    </tr>  
+                    <tr>
+                    	<td>Parent's Name</td>
+                        <td><input type="text" name="pName"></td>
+                    </tr>
+                    <tr>   
+          			 	<td>Phone Number*</td>
+                        <td><input type="text" name="phone"></td>
+                    </tr>
+                    <tr>
+          				<td>E-mail*</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                    	<td>Obi (belt) Rank</td>
+                        <td><select name="obiRank">
+								<option>(None)</option>
+                        		<option>Ju Kyu (10th Kyu White Belt)</option>
+								<option>Ku Kyu (9th Kyu one stripe White Belt)</option>
+								<option>Hachi Kyu (8th Kyu Yellow Belt)</option>
+								<option>Shichi Kyu (7th Kyu Orange Belt)</option>
+								<option>Roko Kyu (6th Kyu Blue Belt)</option>
+								<option>Go Kyu (5th Kyu Green Belt)</option>
+								<option>Yon Kyu (4th Kyu Brown/Purple Belt)</option>
+								<option>San Kyu (3rd Kyu Brown Belt)</option>
+								<option>Ni Kyu (2nd Kyu Brown Belt)</option>
+								<option>Ik Kyu (1st Kyu Brown Belt)</option>
+								<option>Ni Dan (2nd Degree Black Belt)</option>
+								<option>San Dan (3rd Degree Black Belt)</option>
+								<option>Yo Dan (4th Degree Black Belt)</option>
+								<option>Go Dan (5th Degree Black Belt)</option>
+								<option>Roku Dan (6th Degree Black Belt)</option>
+								<option>Nana (Shichi) Dan (7th Degree Black Belt)</option>
+								<option>Hachi Dan (8th Degree Black Belt)</option>
+								<option>Ku Dan (9th Degree Black Belt)</option>
+								<option>Ju Dan (10th Degree Black Belt)</option>
+                            </select>
+						</td>
+					</tr>
+					<tr>
+						<td>18 or Older?</td>
+						<td><input type="radio" name="adultVarify" value="Yes">Yes<br />
+							<input type="radio" name="adultVarify" value="No">No
+						</td>
+					</tr>
+					<tr>
+						<td>Address1</td>
+						<td><input type="text" name="address1"></td>
+					</tr>
+					<tr>
+						<td>Address2</td>
+						<td><input type="text" name="address2"></td>
+					</tr>
+					<tr>
+						<td><input type="submit"></td>
+					</tr>
+				</table>
+			</form>
+	</body>
+</html>
