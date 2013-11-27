@@ -1,0 +1,10 @@
+Personal Site not completed.
+
+Things still needed to do
+	Finish the forms on each of the pages
+	Finish the calculations for the data (a lot of data needs to be input for each of the inputs, as each value (F-A,9-1) has a certain value to go with the skill... 
+		This data will be used for calculations in javascript, just need the time to do them...
+	
+Javascript done already
+	Made buttons hide or show options in which the user will be able to go to what they want (ex. Human CP calculator, Elf Talent Calculator, etc).
+	Used a validation to validate the form data on the calculators. 

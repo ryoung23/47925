@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+			Name: Richard Young
+			Date: Nov 21, 2013
+			First Draft Personal Site
+		-->
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>Home Page WIP</title>
+			
+		<link rel="stylesheet" type="text/css" href="personal.css">
+		<script type="text/javascript" src="visible.js"></script>
+	</head>
+	
+	<body>
+		<center>
+		<table>
+			<tr>
+				<td>
+					<h1>Which race did you want to choose from?</h1>
+				</td>
+			</tr>
+		</table>
+		</center>
+		<div style="text-align:center">
+			<ul id="choices">
+				
+				<li id="choice"><button onclick="toggle_visibility('Human');">Human</button></li>
+				
+				<li id="choice"><button onclick="toggle_visibility('Elf');">Elf</button></li>
+				
+				<li id="choice"><button onclick="toggle_visibility('Giant');">Giant</button></li>
+			</ul>
+		</div>
+		<div id="Human" class="choose" style="display:none;">
+		<center>
+			<table>
+				<tr>
+					<td>
+						<p>Click on a choice to continue.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<form action="humanCP.html" method="get">
+							<input type="submit" value="CP Calculator" name="submit" id="frm1_submit" />
+						</form>
+					</td>
+					<td>
+						<form action="humanTalent.html" method="get">
+							<input type="submit" value="Talent Calculator" name="submit" id="frm1_submit" />
+						</form>
+					</td>
+				</tr>
+			</table>
+		</center>
+		</div>
+		
+		<div id="Elf" class="choose" style="display:none;">
+		<center>
+			<table>
+				<tr>
+					<td>
+						<p>Click on a choice to continue.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<form action="elfCP.html" method="get">
+							<input type="submit" value="CP Calculator" name="submit" id="frm1_submit" />
+						</form>
+					</td>
+					<td>
+						<form action="elfTalent.html" method="get">
+							<input type="submit" value="Talent Calculator" name="submit" id="frm1_submit" />
+						</form>
+					</td>
+				</tr>
+			</table>
+		</center>
+		</div>
+		
+		<div id="Giant" class="choose" style="display:none;">
+		<center>
+			<table>
+				<tr>
+					<td>
+						<p>Click on a choice to continue.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<form action="giantCP.html" method="get">
+							<input type="submit" value="CP Calculator" name="submit" id="frm1_submit" />
+						</form>
+					</td>
+					<td>
+						<form action="giantTalent.html" method="get">
+							<input type="submit" value="Talent Calculator" name="submit" id="frm1_submit" />
+						</form>
+					</td>
+				</tr>
+			</table>
+		</center>
+		</div>
+	</body>
+</html>
+			

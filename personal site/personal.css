@@ -1,0 +1,19 @@
+ul#choices
+				{list-style-type:none;
+				margin:0;
+				padding:10px;
+				overflow:hidden;
+				display:inline-block;
+				}
+				
+	/* #terms		{list-style-type:none;
+				margin:0;
+				padding:0px;
+				overflow:hidden;
+				display:inline-block;
+				}
+				 */
+
+li#choice
+				{float:left;
+				} 
