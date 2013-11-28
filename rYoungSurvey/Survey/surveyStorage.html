@@ -30,7 +30,7 @@
 			}
 		
 			function setCookie(name, value, secondsToLive) {
-				var cookie = encodeURIComponent(value);
+				var cookie =  name + "=" + encodeURIComponent(value);
 				if (typeof daysToLive === "number")
 					cookie += "; max-age=" + (daysToLive);
 				document.cookie = cookie;
@@ -88,8 +88,9 @@
 			for(var name in cookiesObj){
                 document.write(name+"="+cookiesObj[name]+"<br/>");
 			}
-			//End cookie display
+			//End cookie display 
 			
+			document.write(cookiesObj[name]);
 		</script>
 		
 		
