@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+			Name: Richard Young
+			Date: Nov 27, 2013
+			First Draft of the Survey
+		-->
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>Survey WIP</title>
+		
+		<!--<script type="text/javascript" src="get.js"></script>-->
+		<script type="text/javascript">
+			function getCookies() {
+				var cookies = {}; // The object we will return
+				var all = document.cookie; // Get all cookies in one big string
+				if (all === "") // If the property is the empty string
+					return cookies; // return an empty object
+				var list = all.split("; "); // Split into individual name=value pairs
+				for(var i = 0; i < list.length; i++) { // For each cookie
+					var cookie = list[i];
+					var p = cookie.indexOf("="); // Find the first = sign
+					var name = cookie.substring(0,p); // Get cookie name
+					var value = cookie.substring(p+1); // Get cookie value
+					value = decodeURIComponent(value); // Decode the value
+					cookies[name] = value; // Store name and value in object
+				}
+				return cookies;
+			}
+		
+			function setCookie(name, value, secondsToLive) {
+				var cookie = encodeURIComponent(value);
+				if (typeof daysToLive === "number")
+					cookie += "; max-age=" + (daysToLive);
+				document.cookie = cookie;
+			}
+			
+			function getFormInfo(url){
+                //Split information using ?
+                var info=url.split("?");
+                //Take the second part for the
+                //info array and split into
+                //name-value pairs
+                var nameValuePairs=info[1].split("&");
+                //Map the information to the Get Object
+                var obj=new Object();
+                for(var i=0;i<nameValuePairs.length-1;i++){
+                        var map=nameValuePairs[i].split("=");
+                        var name=map[0];
+                        var value=map[1];
+                        obj[name]=value;
+                }
+                return obj;
+			}
+		</script>
+	</head>
+	<body>
+	
+		<script type="text/javascript">
+			//Grab the URL
+			/*document.write("Display the URL </br>");
+			document.write(location.href+"</br>");*/
+			//Place into the $_GET object
+			var $_GET=getFormInfo(location.href);
+			/*
+			document.write("</br>Display the $_GET Object </br>");
+			for(var name in $_GET){
+					document.write(name+"="+$_GET[name]+"<br/>");
+			}*/
+			//Set JSON string
+			var str=JSON.stringify($_GET);
+			/* document.write("</br> Display the JSON String </br>");
+			 document.write("The $_GET Object in a string = "+str+"</br>");*/
+			
+			//COOKIES
+			
+			//how long do you want me to live? 
+			var seconds=300;
+			
+			//set me
+			setCookie ("Survey", str, seconds);
+			
+			//Get me (only need this if you want to display the cookies to test, otherwise, forget it
+			//and comment it out)
+			cookiesObj=getCookies();
+			
+			for(var name in cookiesObj){
+                document.write(name+"="+cookiesObj[name]+"<br/>");
+			}
+			//End cookie display
+			
+		</script>
+		
+		
+	</body>
+</html>
+	
